@@ -1,20 +1,48 @@
-import video1 from "../assets/video.mp4";
 import like from "../assets/like.png";
 import dislike from "../assets/dislike.png";
 import share from "../assets/share.png";
 import save from "../assets/save.png";
 import jack from "../assets/jack.png";
 import user_profile from "../assets/user_profile.jpg";
+import { useEffect, useState } from "react";
+import { API_KEY, value_convertor } from "../data";
+import moment from "moment";
 
-const PlayVideo = () => {
+const PlayVideo = ({ videoId }) => {
+  const [apiData, setApiData] = useState(null);
+
+  const fetVideoData = async () => {
+    // fetching video data
+    const videoDatails_url = `https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&id=${videoId}&maxResults=50&videoCategoryId=0&key=${API_KEY}`;
+    await fetch(videoDatails_url)
+      .then((res) => res.json())
+      .then((data) => setApiData(data.items[0]));
+  };
+
+  useEffect(() => {
+    fetVideoData();
+  }, []);
+
   return (
-    <div className="flex flex-col basis-[69%] p-5">
-      <video className="w-full" src={video1} controls autoPlay muted></video>
+    <div className="basis-[69%] p-5">
+      <div className="play-video">
+        <iframe
+          src={`https://www.youtube.com/embed/${videoId}?autoplay=1`}
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+
       <h3 className="mt-2.5 font-semibold text-xl ">
-        Best Place to visit in holiday
+        {apiData ? apiData.snippet.title : "Title here"}
       </h3>
       <div className="flex items-center justify-between flex-wrap mt-2.5 text-[14px] text-gray-500">
-        <p>1543 views &bull; 2 days ago</p>
+        <p>
+          {apiData ? value_convertor(apiData.statistics.viewCount) : "16K"}{" "}
+          views &bull; 2 days ago
+        </p>
         <div className="flex">
           <span className="inline-flex items-center ml-4">
             <img className="w-5 mr-2" src={like} alt="" />

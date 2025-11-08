@@ -10,3 +10,7 @@ a {
 img {
   cursor: pointer;
 }
+.play-video iframe {
+  height: 37vh;
+  width: 100%;
+}

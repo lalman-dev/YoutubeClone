@@ -5,6 +5,7 @@ import upload_icon from "../assets/upload.png";
 import more_icon from "../assets/more.png";
 import notification_icon from "../assets/notification.png";
 import profile_icon from "../assets/jack.png";
+import { Link } from "react-router-dom";
 
 const Navbar = ({ setSidebar }) => {
   return (
@@ -15,7 +16,9 @@ const Navbar = ({ setSidebar }) => {
           className="w-5 mr-6"
           onClick={() => setSidebar((prev) => !prev)}
         />
-        <img src={logo_icon} className="w-15 sm:w-33" />
+        <Link to="/">
+          <img src={logo_icon} className="w-15 sm:w-33" />
+        </Link>
       </div>
 
       <div className="flex items-center border border-gray-300 mr-4 rounded-3xl py-2 px-3 ">

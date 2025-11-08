@@ -11,64 +11,64 @@ const RecommendedVideos = () => {
   return (
     <div className="basis-[30%] ">
       <div className="flex justify-between mb-2 pt-5">
-        <img className="flex basis-[49%] w-[50%]" src={thumbnail1} />
-        <div className="flex basis-[49%]">
+        <img className="basis-[49%] w-[50%]" src={thumbnail1} />
+        <div className="basis-[49%]">
           <h4 className="text-sm mb-1">Best video for travel</h4>
           <p>Lalman</p>
           <p>200K Views</p>
         </div>
       </div>
       <div className="flex justify-between mb-2">
-        <img className="flex basis-[49%] w-[50%]" src={thumbnail2} />
-        <div className="flex basis-[49%]">
+        <img className="basis-[49%] w-[50%]" src={thumbnail2} />
+        <div className="basis-[49%]">
           <h4 className="text-sm mb-1">Best video for travel</h4>
           <p>Lalman</p>
           <p>200K Views</p>
         </div>
       </div>
       <div className="flex justify-between mb-2">
-        <img className="flex basis-[49%] w-[50%]" src={thumbnail3} />
-        <div className="flex basis-[49%]">
+        <img className="basis-[49%] w-[50%]" src={thumbnail3} />
+        <div className="basis-[49%]">
           <h4 className="text-sm mb-1">Best video for travel</h4>
           <p>Lalman</p>
           <p>200K Views</p>
         </div>
       </div>
       <div className="flex justify-between mb-2">
-        <img className="flex basis-[49%] w-[50%]" src={thumbnail4} />
-        <div className="flex basis-[49%]">
+        <img className="basis-[49%] w-[50%]" src={thumbnail4} />
+        <div className="basis-[49%]">
           <h4 className="text-sm mb-1">Best video for travel</h4>
           <p>Lalman</p>
           <p>200K Views</p>
         </div>
       </div>
       <div className="flex justify-between mb-2">
-        <img className="flex basis-[49%] w-[50%]" src={thumbnail5} />
-        <div className="flex basis-[49%]">
+        <img className="basis-[49%] w-[50%]" src={thumbnail5} />
+        <div className="basis-[49%]">
           <h4 className="text-sm mb-1">Best video for travel</h4>
           <p>Lalman</p>
           <p>200K Views</p>
         </div>
       </div>
       <div className="flex justify-between mb-2">
-        <img className="flex basis-[49%] w-[50%]" src={thumbnail6} />
-        <div className="flex basis-[49%]">
+        <img className="basis-[49%] w-[50%]" src={thumbnail6} />
+        <div className="basis-[49%]">
           <h4 className="text-sm mb-1">Best video for travel</h4>
           <p>Lalman</p>
           <p>200K Views</p>
         </div>
       </div>
       <div className="flex justify-between mb-2">
-        <img className="flex basis-[49%] w-[50%]" src={thumbnail7} />
-        <div className="flex basis-[49%]">
+        <img className="basis-[49%] w-[50%]" src={thumbnail7} />
+        <div className="basis-[49%]">
           <h4 className="text-sm mb-1">Best video for travel</h4>
           <p>Lalman</p>
           <p>200K Views</p>
         </div>
       </div>
       <div className="flex justify-between mb-2">
-        <img className="flex basis-[49%] w-[50%]" src={thumbnail8} />
-        <div className="flex basis-[49%]">
+        <img className="basis-[49%] w-[50%]" src={thumbnail8} />
+        <div className="basis-[49%]">
           <h4 className="text-sm mb-1">Best video for travel</h4>
           <p>Lalman</p>
           <p>200K Views</p>

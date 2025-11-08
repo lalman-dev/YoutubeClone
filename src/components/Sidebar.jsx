@@ -13,7 +13,7 @@ import tom from "../assets/tom.png";
 import megan from "../assets/megan.png";
 import cameron from "../assets/cameron.png";
 
-const Sidebar = ({ sidebar }) => {
+const Sidebar = ({ sidebar, category, setCategory }) => {
   return (
     <div
       className={`bg-white h-screen fixed top-0 pl-[2%] pt-20 transition-all duration-300 ${
@@ -21,7 +21,10 @@ const Sidebar = ({ sidebar }) => {
       }`}
     >
       <div>
-        <div className="flex items-center mb-5 w-fit flex-wrap cursor-pointer">
+        <div
+          onClick={() => setCategory(0)}
+          className="flex items-center mb-5 w-fit flex-wrap cursor-pointer"
+        >
           <img src={home} className="w-5 mr-5" />{" "}
           <p
             className={`${
@@ -31,7 +34,10 @@ const Sidebar = ({ sidebar }) => {
             Home
           </p>
         </div>
-        <div className="flex items-center mb-5 w-fit flex-wrap cursor-pointer">
+        <div
+          onClick={() => setCategory(20)}
+          className="flex items-center mb-5 w-fit flex-wrap cursor-pointer"
+        >
           <img src={game_icon} className="w-5 mr-5" />{" "}
           <p
             className={`${
@@ -41,7 +47,10 @@ const Sidebar = ({ sidebar }) => {
             Gaming
           </p>
         </div>
-        <div className="flex items-center mb-5 w-fit flex-wrap cursor-pointer">
+        <div
+          onClick={() => setCategory(2)}
+          className="flex items-center mb-5 w-fit flex-wrap cursor-pointer"
+        >
           <img src={automobiles} className="w-5 mr-5" />{" "}
           <p
             className={`${
@@ -51,7 +60,10 @@ const Sidebar = ({ sidebar }) => {
             Automobiles
           </p>
         </div>
-        <div className="flex items-center mb-5 w-fit flex-wrap cursor-pointer">
+        <div
+          onClick={() => setCategory(17)}
+          className="flex items-center mb-5 w-fit flex-wrap cursor-pointer"
+        >
           <img src={sports} className="w-5 mr-5" />{" "}
           <p
             className={`${
@@ -61,7 +73,10 @@ const Sidebar = ({ sidebar }) => {
             Sports
           </p>
         </div>
-        <div className="flex items-center mb-5 w-fit flex-wrap cursor-pointer">
+        <div
+          onClick={() => setCategory(24)}
+          className="flex items-center mb-5 w-fit flex-wrap cursor-pointer"
+        >
           <img src={entertainment} className="w-5 mr-5" />{" "}
           <p
             className={`${
@@ -71,7 +86,10 @@ const Sidebar = ({ sidebar }) => {
             Entertainment
           </p>
         </div>
-        <div className="flex items-center mb-5 w-fit flex-wrap cursor-pointer">
+        <div
+          onClick={() => setCategory(28)}
+          className="flex items-center mb-5 w-fit flex-wrap cursor-pointer"
+        >
           <img src={tech} className="w-5 mr-5" />{" "}
           <p
             className={`${
@@ -81,7 +99,10 @@ const Sidebar = ({ sidebar }) => {
             Technology
           </p>
         </div>
-        <div className="flex items-center mb-5 w-fit flex-wrap cursor-pointer">
+        <div
+          onClick={() => setCategory(10)}
+          className="flex items-center mb-5 w-fit flex-wrap cursor-pointer"
+        >
           <img src={music} className="w-5 mr-5" />{" "}
           <p
             className={`${
@@ -91,7 +112,10 @@ const Sidebar = ({ sidebar }) => {
             Music
           </p>
         </div>
-        <div className="flex items-center mb-5 w-fit flex-wrap cursor-pointer">
+        <div
+          onClick={() => setCategory(22)}
+          className="flex items-center mb-5 w-fit flex-wrap cursor-pointer"
+        >
           <img src={blogs} className="w-5 mr-5" />{" "}
           <p
             className={`${
@@ -101,7 +125,10 @@ const Sidebar = ({ sidebar }) => {
             Blogs
           </p>
         </div>
-        <div className="flex items-center mb-5 w-fit flex-wrap cursor-pointer">
+        <div
+          onClick={() => setCategory(25)}
+          className="flex items-center mb-5 w-fit flex-wrap cursor-pointer"
+        >
           <img src={news} className="w-5 mr-5" />{" "}
           <p
             className={`${
