@@ -44,6 +44,6 @@ This project replicates the core layout and functionality of YouTube, including 
 
 ## 🌐 Deployment
 This project is deployed on **Netlify**.  
-👉 [Live Demo](https://your-netlify-link.netlify.app) *(replace with your actual link)*
+👉 [Live Demo](https://youtubeclonel.netlify.app/)
 
 ---
