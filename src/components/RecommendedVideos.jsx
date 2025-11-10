@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const RecommendedVideos = ({ categoryId }) => {
   const [apiData, setApiData] = useState([]);
   const fetchData = async () => {
-    const relatedVideos_url = `https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=50&regionCode=IN&videoCategoryId=${categoryId}&key=${API_KEY}`;
+    const relatedVideos_url = `https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=50&regionCode=US&videoCategoryId=${categoryId}&key=${API_KEY}`;
     await fetch(relatedVideos_url)
       .then((res) => res.json())
       .then((data) => setApiData(data.items));
