@@ -82,6 +82,6 @@ npm run dev
 ```
 
 ✅ Requirements
-Node.js  ≥ 18
-npm ≥ 9
-Modern browser (Chrome, Firefox, Edge)
+- Node.js  ≥ 18
+- npm ≥ 9
+- Modern browser (Chrome, Firefox, Edge)
