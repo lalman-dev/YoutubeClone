@@ -34,10 +34,17 @@ Deployed on **Netlify** → [Live Demo](https://youtubeclonel.netlify.app/)
 ---
 
 ## 📸 Screenshots
-<img width="1440" height="900" alt="Screenshot 2025-12-24 at 3 11 32 PM" src="https://github.com/user-attachments/assets/83e8a4d4-7b45-4634-8fe0-0d50948d8b6a" />
-<img width="1440" height="900" alt="Screenshot 2025-12-24 at 3 11 51 PM" src="https://github.com/user-attachments/assets/453a953c-b6b5-4aa4-9bd3-7a2dce184221" />
-<img width="1440" height="900" alt="Screenshot 2025-12-24 at 3 12 01 PM" src="https://github.com/user-attachments/assets/6e1c2310-f505-4cad-b887-2725bf736428" />
-
+📸 Screenshots
+<table>
+<tr>
+<td><img src="https://github.com/user-attachments/assets/83e8a4d4-7b45-4634-8fe0-0d50948d8b6a" alt="Homepage" width="400"/></td>
+<td><img src="https://github.com/user-attachments/assets/453a953c-b6b5-4aa4-9bd3-7a2dce184221" alt="Video Playback" width="400"/></td>
+</tr>
+<tr>
+<td><img src="https://github.com/user-attachments/assets/6e1c2310-f505-4cad-b887-2725bf736428" alt="Sidebar Navigation" width="400"/></td>
+<td><img src="https://github.com/user-attachments/assets/6e1c2310-f505-4cad-b887-2725bf736428" alt="Recommended Section" width="400"/></td>
+</tr>
+</table>
 
 ---
 
@@ -51,10 +58,30 @@ Deployed on **Netlify** → [Live Demo](https://youtubeclonel.netlify.app/)
 
 ## 🚀 Getting Started
 
-Clone the repo and install dependencies:
+1. Clone the repo and install dependencies:
 
 ```bash
 git clone https://github.com/lalman-dev/YoutubeClone.git
 cd YoutubeClone
+```
+2. Install dependencies
+ ```bash
 npm install
+```
+
+3. Set Up Environment Variables
+Create a .env file in the root directory and add your YouTube API key:
+```Env
+VITE_YOUTUBE_API_KEY=your_api_key_here
+```
+⚠️ Keep your API key private. Do not commit .env to version control.
+
+4. Run the Development Server
+```bash
 npm run dev
+```
+
+✅ Requirements
+Node.js  ≥ 18
+npm ≥ 9
+Modern browser (Chrome, Firefox, Edge)
